@@ -33,7 +33,9 @@ const Queue = () => {
   };
   return (
     <div className="p-4 flex flex-col gap-10">
-      <h1 className="text-blue-600 font-sans text-6xl">Queue Data Structure</h1>
+      <h1 className="text-blue-600 font-sans text-6xl">
+        Queue Data Structure-FIFO(First in First Out
+      </h1>
 
       <main className="flex flex-wrap items-center border-2 border-l-0 border-r-0 border-t-green-800 border-b-green-800 p-10 gap-4 relative">
         <div className="flex justify-center items-center">
