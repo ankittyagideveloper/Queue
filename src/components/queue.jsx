@@ -33,10 +33,14 @@ const Queue = () => {
   };
   return (
     <div className="p-4 flex flex-col gap-10">
-      <h1 className="text-blue-600 font-sans text-6xl">
-        Queue Data Structure-FIFO(First in First Out
-      </h1>
-
+      <header>
+        <h1 className="text-blue-600 font-sans md:text-6xl text-xl">
+          Queue Data Structure
+        </h1>
+        <h2 className="text-blue-600 font-sans md:text-6xl text-xl">
+          FIFO (First in First Out)
+        </h2>
+      </header>
       <main className="flex flex-wrap items-center border-2 border-l-0 border-r-0 border-t-green-800 border-b-green-800 p-10 gap-4 relative">
         <div className="flex justify-center items-center">
           <button ref={forwardArrow} className="hidden absolute left-0">
@@ -55,7 +59,6 @@ const Queue = () => {
           ⬅
         </button>
       </main>
-
       <footer className="flex flex-col gap-10">
         <div className="flex gap-4">
           <button
@@ -72,10 +75,10 @@ const Queue = () => {
             dequeue
           </button>
         </div>
-        <h2 className="text-4xl text-red-400">
+        <h2 className="text-xl md:text-4xl text-red-400">
           Front Element : {!queue.length ? "Queue is Empty" : queue[0]}
         </h2>
-        <h2 className="text-4xl text-red-400">
+        <h2 className="text-xl md:text-4xl text-red-400">
           Length of Queue : {queue.length}
         </h2>
       </footer>
